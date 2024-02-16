@@ -1,3 +1,33 @@
+/* html body text */
+html {
+    font-family: "Kanit", sans-serif;
+    font-weight: 320;
+    font-style: normal;
+    background-color: hsl(199, 18%, 28%);
+    font-size: 1.2em;
+}
+/* heading text */
+h1, h2, h3 {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 700;
+    color: hsla(204 15% 94 / 0.90);
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 200;
+    text-align: right;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
 /* body */
 body {
     display: flex;
@@ -10,6 +40,10 @@ header {
     display: flex;
     margin: auto;
     align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /* main container */
@@ -17,8 +51,10 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: #ECEFF1;
+    border-radius: 15px;
 }
 
 /* lyrics container */
@@ -27,12 +63,16 @@ header {
     flex: 3 1 0;
     padding-left: 3%;
     padding-right: 3%;
+    background-color: hsla(198 16% 84% / 0.4);
+    margin: 2%;
+    border-radius: 50px 15px;
 }
 
 /* annotations container*/
 .annotations {
     order: 2;
     flex: 2 1 0;
+    margin: 2%;
 }
 
 /* multi line white space */
@@ -40,29 +80,49 @@ section.verse, section.intro-outro, section.chorus, section.bridge {
     white-space: pre-wrap;
 }
 
-/* */
-section.intro-outro {
+/* intro outro */
+section.intro-outro h3 {
     color: green;
 }
 
-/* */
-section.verse {
+/* verse */
+section.verse h3 {
     color: blue;
 }
 
-/* */
-section.chorus{
+/* chorus */
+section.chorus h3 {
     color: red;
 }
 
 
-/* */
-section.bridge{
-    color: aqua;
+/* aqua */
+section.bridge h3 {
+    color: blueviolet;
 }
 
+/* section */
 section {
     margin: auto;
 }
 
+/* cover */
+.annotations img {
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+/* section */
+section#about, section#newjeans {
+    margin: auto;
+    white-space: normal;
+    font-weight: 200;
+}
+
 /* */
+footer {
+    padding-top: 40px;
+    font-size: 0.6em;
+    text-align: right;
+    margin: 2% 2%;
+}
