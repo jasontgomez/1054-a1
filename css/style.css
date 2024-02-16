@@ -3,7 +3,7 @@ html {
     font-family: "Kanit", sans-serif;
     font-weight: 320;
     font-style: normal;
-    background-color: hsl(199, 18%, 28%);
+    background-color: hsla(199 18% 28% / 0.96);
     font-size: 1.2em;
 }
 /* heading text */
@@ -76,6 +76,14 @@ header {
     margin: 2%;
 }
 
+/* enlarge effect */
+.lyrics section:hover h3 {
+    transform: scale(1.08);
+    font-weight: 400;
+}
+
+
+
 /* multi line white space */
 section.verse, section.intro-outro, section.chorus, section.bridge {
     white-space: pre-wrap;
@@ -84,22 +92,26 @@ section.verse, section.intro-outro, section.chorus, section.bridge {
 /* intro outro */
 section.intro-outro h3 {
     color: green;
+    transition: transform .15s;
 }
 
 /* verse */
 section.verse h3 {
     color: blue;
+    transition: transform .15s;
 }
 
 /* chorus */
 section.chorus h3 {
     color: red;
+    transition: transform .15s;
 }
 
 
 /* aqua */
 section.bridge h3 {
     color: blueviolet;
+    transition: transform .15s;
 }
 
 /* section */
@@ -120,10 +132,22 @@ section#about, section#newjeans {
     font-weight: 200;
 }
 
-/* */
+/* fine pritn sources */
 footer {
     padding-top: 40px;
     font-size: 0.6em;
     text-align: right;
     margin: 2% 2%;
+}
+
+/* mobile devices column collapse */
+@media (max-width: 650px){
+    .main-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .annotations {
+        margin: 4%;
+    }
 }
